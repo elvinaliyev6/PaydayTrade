@@ -1,6 +1,7 @@
 package az.company.paydaytrade.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ColumnDefault;
@@ -10,20 +11,24 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table
+@Table(name = "USERS")
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class User {
 
     @Id
-    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @Column(name = "NAME")
     private String name;
 
-    @Column
+    @Column(name = "SURNAME")
     private String surname;
 
-    @Column
+    @Column(name = "USERNAME")
     private String username;
 
     @Column(name = "EMAIL")
@@ -49,5 +54,6 @@ public class User {
     @Column(name = "ACCOUNT_CONFIRMED")
     @ColumnDefault(value = "0")
     private Integer accountConfirmed;
+
 
 }

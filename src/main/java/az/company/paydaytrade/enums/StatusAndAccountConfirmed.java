@@ -3,7 +3,7 @@ package az.company.paydaytrade.enums;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public enum EnumAvailableStatus {
+public enum StatusAndAccountConfirmed {
 
     ACTIVE(1),
     DEACTIVE(0);

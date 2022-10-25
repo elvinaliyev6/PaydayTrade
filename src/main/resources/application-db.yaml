@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:paydaytrade
+    driverClassName: org.h2.Driver
+    username: elvin
+    password: 12345
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  h2:
+    console:
+      enabled: true
+

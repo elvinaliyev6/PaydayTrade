@@ -7,6 +7,7 @@ import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 @Entity
 @AllArgsConstructor
@@ -33,4 +34,7 @@ public class ConfirmationToken {
     @ColumnDefault(value = "1")
     private Integer status;
 
+    public ConfirmationToken(User user) {
+        confirmationToken= UUID.randomUUID().toString();
+    }
 }
