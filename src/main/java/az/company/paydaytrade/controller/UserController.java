@@ -24,5 +24,20 @@ public class UserController {
         return userService.confirmUserAcoount(modelAndView,confirmationToken);
     }
 
+    @GetMapping("/login")
+    public Response login(@RequestParam String identity,@RequestParam String password,@RequestParam String status){
+        return userService.checkLogin(identity,password,status);
+    }
+
+    @PutMapping("/addMoney")
+    public Response addMoney(@RequestParam String username,@RequestParam String amount){
+        return userService.addMoney(username,amount);
+    }
+
+    @PutMapping("/withdrawMoney")
+    public Response withdrawMoney(@RequestParam String username,@RequestParam String amount){
+        return userService.withdrawMoney(username,amount);
+    }
+
 
 }
