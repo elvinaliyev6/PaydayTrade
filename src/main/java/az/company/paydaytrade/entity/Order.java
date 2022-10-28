@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
 @Builder
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
+@Table(name = "ORDERS")
 public class Order {
 
     @Id

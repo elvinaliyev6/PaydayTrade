@@ -37,7 +37,8 @@ public class StockServiceImpl implements StockService {
 
         try {
             List<RespStock> stockList = stockRepository.findAllByStatus(StatusAndAccountConfirmed.ACTIVE.getValue())
-                    .stream().map(stock -> Converter.convertFromStock(stock))
+                    .stream()
+                    .map(stock -> Converter.convertFromStock(stock))
                     .collect(Collectors.toList());
 
             if (stockList.isEmpty())
@@ -92,7 +93,7 @@ public class StockServiceImpl implements StockService {
 
                 orderRepository.save(resOrder);
                 mailService.sendEmail(user.getEmail(),
-                        "By Stock",
+                        "Buy Stock",
                         "  elvinaliyevinfo@gmail.com"
                         , "Stock Name: " + stock.getName() + ", Share Amount: " + count + " , Price: " + Integer.valueOf(count) * stock.getPrice());
                 response.setStatus(RespStatus.getSuccessMessage());
@@ -147,12 +148,13 @@ public class StockServiceImpl implements StockService {
             user.setBalance(user.getBalance() + (Integer.valueOf(count) * stock.getPrice()));
             userRepository.save(user);
 
+            if (order.getCount() < Integer.valueOf(count))
+                throw new PaydayTradeException(ExceptionConstants.INVALID_REQUEST_DATA, "Invalid request data!");
+
             order.setCount(order.getCount() - Integer.valueOf(count));
             order.setValue(order.getValue() - (Integer.valueOf(count) * stock.getPrice()));
             orderRepository.save(order);
 
-            if (order.getCount() < Integer.valueOf(count))
-                throw new PaydayTradeException(ExceptionConstants.INVALID_REQUEST_DATA, "Invalid request data!");
 
             response.setStatus(RespStatus.getSuccessMessage());
             mailService.sendEmail(user.getEmail()
