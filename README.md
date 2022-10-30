@@ -23,11 +23,6 @@
   <li>Run it</li>
   <li>Test endpoints you are interested in</li>
 </ol>
- 
- <h1>Endpoint</h1>
-  
- <h4>1.Register user</h4>
-![register](https://user-images.githubusercontent.com/60142132/198896331-ea25f9f5-80ed-4674-9745-48d6f92c7e1a.png)
 
   
 
