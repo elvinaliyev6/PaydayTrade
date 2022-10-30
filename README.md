@@ -28,7 +28,7 @@
  
     Main url-<code>http://localhost:8000/bookstore</code>
     
-    POST <code>http://localhost:8082/paydaytrade/user/signUp</code> for register users.</code>
+    POST <code>http://localhost:8082/paydaytrade/user/signUp</code> for register users.
     ![register](https://user-images.githubusercontent.com/60142132/198893704-b2b44a30-6064-4601-b4ec-1dfeab435f80.png)
 
  
