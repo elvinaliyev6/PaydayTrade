@@ -3,6 +3,7 @@ package az.company.paydaytrade.controller;
 import az.company.paydaytrade.dto.request.UserRequest;
 import az.company.paydaytrade.dto.response.Response;
 import az.company.paydaytrade.service.UserService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -10,6 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 @RequestMapping("/user")
 @RequiredArgsConstructor
+@Tag(name = "User Service",description = "User services")
 public class UserController {
 
     private final UserService userService;
