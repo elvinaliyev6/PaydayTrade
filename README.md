@@ -27,7 +27,7 @@
  <h1>Endpoint</h1>
   
  <h4>1.Register user</h4>
-  ![register](https://user-images.githubusercontent.com/60142132/198894846-2590f4b3-5cf2-4674-9637-92d177b6e824.png)
+![register](https://user-images.githubusercontent.com/60142132/198896331-ea25f9f5-80ed-4674-9745-48d6f92c7e1a.png)
 
   
 
