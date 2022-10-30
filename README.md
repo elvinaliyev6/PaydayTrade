@@ -26,7 +26,7 @@
  
  <h1>Endpoint</h1>
  
-    Main url-<code>http://localhost:8000/bookstore</code>
+    <h1>Main url-<code>http://localhost:8000/bookstore</code></h1>
     
     <h3>POST <code> http://localhost:8082/paydaytrade/user/signUp </code> for register users.</h3.
 ![register](https://user-images.githubusercontent.com/60142132/198894846-2590f4b3-5cf2-4674-9637-92d177b6e824.png)
