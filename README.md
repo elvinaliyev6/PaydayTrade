@@ -29,8 +29,8 @@
     Main url-<code>http://localhost:8000/bookstore</code>
     
     POST <code>http://localhost:8082/paydaytrade/user/signUp</code> for register users.
-    <img src="C:\Users\Hp\Desktop\jjjj\register.png" alt="Regoster User">
-  
+    ![register](https://user-images.githubusercontent.com/60142132/198893704-b2b44a30-6064-4601-b4ec-1dfeab435f80.png)
+
   <li>POST <code>http://localhost:8000/bookstore/user/signUp</code> for registration</li>
   
   <li>GET <code>http://localhost:8000/bookstore/books/bookList</code> for get all books</li>
