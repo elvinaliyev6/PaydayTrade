@@ -25,8 +25,9 @@
 </ol>
  
  <h1>Endpoint</h1>
-    
-    <h3>POST - http://localhost:8082/paydaytrade/user/signUp for register users.</h3>
+  
+  <h3>  http://localhost:8082/paydaytrade/user/signUp</h3>
+  
 ![register](https://user-images.githubusercontent.com/60142132/198894846-2590f4b3-5cf2-4674-9637-92d177b6e824.png)
 
  
