@@ -27,10 +27,10 @@
  <h1>Endpoint</h1>
   
  <h4>1.Register user</h4>
-![register](https://user-images.githubusercontent.com/60142132/198894846-2590f4b3-5cf2-4674-9637-92d177b6e824.png)
+  ![register](https://user-images.githubusercontent.com/60142132/198894846-2590f4b3-5cf2-4674-9637-92d177b6e824.png)
 
-<h4>After register service sending confirmation email to account</h4>
-![completeregister](https://user-images.githubusercontent.com/60142132/198895911-1e1cc2cb-da81-4574-99ea-7ae254fcfb9b.png)
+  <h4>After register service sending confirmation email to account</h4>
+  ![completeregister](https://user-images.githubusercontent.com/60142132/198895911-1e1cc2cb-da81-4574-99ea-7ae254fcfb9b.png)
 
 <h4>When you click <code>http://localhost:8082/paydaytrade/user/confirm-account?token=616affd6-8c4e-40b0-b0bd-b404bfd5aecc</code></h4>
 ![image](https://user-images.githubusercontent.com/60142132/198896031-c4e0f6dc-4178-4956-b6b5-04f3a0ddea41.png)
